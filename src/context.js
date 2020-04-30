@@ -132,8 +132,8 @@ clearCart = () => {
             cart:[]
         }
     }, ()=>{
-      this.setProducts();  
-      this.addTotals();
+    this.setProducts();  
+    this.addTotals();
     })
 }
 

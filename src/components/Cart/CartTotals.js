@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { ButtonContainer } from '../Button';
 
 export default function CartTotals({value}) {
     const { cartSubtotal, cartTax, cartTotal, clearCart} = value;
@@ -7,15 +8,13 @@ export default function CartTotals({value}) {
         <React.Fragment>
             <div clasName="container">
             <div className="row">
-            <div className="col-10 mt-2 ml-sm-5 ml-md-auto
-            col-sm-8 text-capitalize text-right">
-            <Link>
-            <button className="btn btn-outline-danger text-uppercase mb-3 px-5"
+            <div className="col-10 mt-2 ml-sm-auto ml-md-auto
+            col-sm-8 text-capitalize text-right mr-sm-auto mr-md-auto">
+            <ButtonContainer className="btn btn-outline-danger text-uppercase mb-3 px-5"
             type="button"
             onClick={()=>clearCart()}>
                 clear cart
-            </button>
-            </Link>
+            </ButtonContainer>
             <h5><span className="text-title">subtotal : <strong>
                 $ {cartSubtotal}</strong></span></h5>
 

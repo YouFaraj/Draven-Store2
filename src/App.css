@@ -26,6 +26,10 @@ body{
   color: var(--mainRed);
 }
 
+.text-white{
+  color: var(--mainWhite);
+}
+
 .text-bright {
   color: var(--lightBlue);
 }
@@ -62,4 +66,8 @@ border: 0.1rem solid var(--mainDark) !important;
 
 .cborder{
   border-radius: 1rem;
+}
+
+.cfont{
+  font-size: 1.4rem;
 }

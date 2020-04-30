@@ -1,4 +1,5 @@
 import React from 'react'
+import { AddButtonContainer } from '../Button';
 
 export default function CartItem({item,value}) {
     const{id,title,img,price,total,count} = item;
@@ -12,31 +13,29 @@ export default function CartItem({item,value}) {
                 alt="product" />
         </div>
 
-        <div className="col-10 mx-auto col-lg-2">
-        <span className="d-lg-none">product : </span>
+        <div className="col-10 mx-auto col-lg-2 cfont">
         {title}
         </div>
 
-        <div className="col-10 mx-auto col-lg-2">
-        <span className="d-lg-none">price : </span>
+        <div className="col-10 mx-auto col-lg-2 cfont">
         {price}
         </div>
 
         <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
         <div className="d-flex justify-content-center">
         <div>
-            <span className="btn btn-black mx-1" onClick={()=>
+            <AddButtonContainer onClick={()=>
             decrement(id)}>-     
-            </span>
-            <span className="btn btn-black mx-1">{count}
-            </span>
-            <span className="btn btn-black mx-1" onClick={()=>
+            </AddButtonContainer>
+            <AddButtonContainer>{count}
+            </AddButtonContainer>
+            <AddButtonContainer onClick={()=>
             increment(id)}>+     
-            </span>
+            </AddButtonContainer>
         </div>
             </div>
         </div> 
-        <div className="col-10 mx-auto col-lg-2">
+        <div className="col-10 mx-auto col-lg-2 cfont">
         <div className="card-icon" onClick={()=>removeItem(id)}>
         <i className="fas fa-trash"></i>   
         </div>

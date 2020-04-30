@@ -15,11 +15,15 @@ export default class Cart extends Component {
                         const {cart} = value;
                         if(cart.length > 0){
                             return(
-                                <React.Fragment className="background">
+                                <React.Fragment>
                                     <Title name="your" title="cart" />
+                                    <div className="container">
+                                    <div className="background">
                                     <CartColumns /> 
                                     <CartList value={value} />
                                     <CartTotals value={value} />
+                                    </div>
+                                    </div>
                                 </React.Fragment>
                             );
                         } else {
