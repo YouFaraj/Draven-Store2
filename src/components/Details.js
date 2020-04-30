@@ -11,16 +11,16 @@ export default class Details extends Component {
                 const {id,company,img,info,price,title,inCart} 
                 = value.detailProduct;
                 return (
-                    <div className="container py-5">
+                    <div className="container">
 
                         <div className="row">
                             <div className="col-10 mx-auto text-center
-                            text-slanted text-blue my-5">
+                            text-slanted my-5 text-title">
                                 <h1>{title}</h1>
                             </div>
                         </div>
-
-                        <div className="row">
+                       
+                        <div className="row background">
                             <div className="col-10 mx-auto col-md-6 my-3">
                                 <img src={img} className="img-fluid" alt="product"/>
                             </div>
@@ -28,7 +28,8 @@ export default class Details extends Component {
 
                                 <h1>model : {title}</h1>
 
-                                <h4 className="text-red text-uppercase text-muted mt-3 mb-2">made by : <span className="text-uppercase">
+                                <h4 className="text-uppercase text-red
+                                 mt-3 mb-2">made by : <span className="text-red text-uppercase">
                                 {company}</span>
                                 </h4>  
 
@@ -61,10 +62,11 @@ export default class Details extends Component {
                                     </ButtonContainer>
                                 
 
-                                </div>
+                             
 
                             </div>
                         </div>
+                    </div>
                     </div>
                 );
                 }}

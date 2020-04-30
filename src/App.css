@@ -12,7 +12,6 @@ body{
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
   background-image: url(https://i.imgur.com/vV72wlt.jpg) !important;
-  background-repeat: no-repeat !important;
   background-size: cover !important;
 }
 
@@ -30,6 +29,7 @@ body{
 .text-bright {
   color: var(--lightBlue);
 }
+
 .btn-black{
 background: transparent;
 text-transform: capitalize;
@@ -48,4 +48,18 @@ border: 0.1rem solid var(--mainDark) !important;
   cursor: pointer;
   font-size: 1.2rem;
   color: var(--mainYellow) !important;
+}
+
+.background{
+  background-color: var(--mainDark);
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.cmodal{
+  padding-bottom: 1rem;
+}
+
+.cborder{
+  border-radius: 1rem;
 }

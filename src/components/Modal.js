@@ -21,8 +21,8 @@ export default class Modal extends Component {
                                 <div className="row">
                                     <div id="modal" className="p-5 col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
                                         <div>
-                                            <h5>item added to the cart</h5>
-                                            <img src={img} className="img-fluid"
+                                            <h5 className="cmodal">item added to the cart</h5>
+                                            <img src={img} className="img-fluid cmodal"
                                             alt ="product" />
                                             <h5 className="pt-2">{title}</h5>
                                             <h5 className="text-muted">Price :<span> {price}</span> $</h5>
@@ -60,7 +60,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 #modal {
-    background: var(--mainRed);
-    color: var(--mainWhite);
+    background: var(--mainDark);
+    color: var(--mainRed);
 }
 `;
