@@ -2,13 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import logo from "../logo.png"
 import styled from "styled-components";
-import {ButtonContainer} from './Button';
 import {NavButtonContainer} from './Button';
 
 export default class NavBar extends React.Component{
     render(){
         return (
-            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">   
+            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
                 <Link to="/">
                     <img height= "50px" src={logo} alt="Draven" className="navbar-brand" />
                 </Link>
@@ -22,7 +21,7 @@ export default class NavBar extends React.Component{
                 <Link to="/cart" className="ml-auto">
                     <NavButtonContainer>
                         <i className ="fas fa-cart-plus" />
-                        <span> my Cart</span> 
+                        <span> my Cart</span>
                     </NavButtonContainer>
                 </Link>
             </NavWrapper>
@@ -44,5 +43,5 @@ background: var(--mainDark);
         background:var(--mainRed);
         }
     }
- 
+
 `

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import { ButtonContainer } from '../Button';
 
 export default function CartTotals({value}) {
@@ -27,6 +26,6 @@ export default function CartTotals({value}) {
             </div>
             </div>
 
-        </React.Fragment> 
+        </React.Fragment>
     )
 }
